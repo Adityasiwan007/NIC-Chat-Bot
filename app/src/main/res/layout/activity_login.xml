@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/login_parent_layout"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ip_settings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/ip_settings"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:background="@drawable/settings" />
+        </LinearLayout>
+
+        <LinearLayout
+    android:layout_weight="2"
+            android:id="@+id/logo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/logo_header" />
+</LinearLayout>
+<LinearLayout
+        android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="4">
+<LinearLayout
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight=".5">
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/input_email"
+        android:background="@drawable/login_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textNoSuggestions|textWebEmailAddress"
+        android:hint="User Name"
+      />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".45">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/login_edit_text"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_login"
+        android:background="@drawable/login_btn_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_email"
+        android:text="Login"
+        android:textColor="#fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Don't have an account? "
+                android:textSize="14dp"/>
+            <TextView
+                android:elevation="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sign Up"
+                android:textSize="14dp"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

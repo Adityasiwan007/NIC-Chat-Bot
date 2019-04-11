@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingTop="10dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/chat_edit_text_bg">
+            <ImageView
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/chatbot"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/rcv_time"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:paddingTop="6dp"
+            android:paddingLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/time_size"
+            android:textColor="@color/time_color"
+            android:text="1:06 PM"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:elevation="1dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:padding="8dp"
+        android:background="@drawable/rcv_text_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60dp">
+
+        <TextView
+
+            android:id="@+id/rcv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#FFF"
+            android:text="Input Text"
+            />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</LinearLayout>

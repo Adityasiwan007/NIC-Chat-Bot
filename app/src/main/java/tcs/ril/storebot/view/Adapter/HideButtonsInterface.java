@@ -1,0 +1,1 @@
+package tcs.ril.storebot.view.Adapter;public interface HideButtonsInterface {     void Hide();}

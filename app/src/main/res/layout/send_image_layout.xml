@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="end">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:id="@+id/send_time"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:paddingTop="6dp"
+            android:paddingRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/time_size"
+            android:textColor="@color/time_color"
+            android:text="1:06 PM"
+            />
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/chat_edit_text_bg">
+            <ImageView
+                android:id="@+id/profile_img"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/user"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:elevation="1dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="18dp"
+        android:padding="8dp"
+        android:background="@drawable/send_msg_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60dp">
+
+        <ImageView
+            android:id="@+id/send_image"
+            android:layout_gravity="center"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:textSize="16sp"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</LinearLayout>

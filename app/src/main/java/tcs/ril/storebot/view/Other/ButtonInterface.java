@@ -1,0 +1,1 @@
+package tcs.ril.storebot.view.Other;public interface ButtonInterface {    void openMic();}
